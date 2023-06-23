@@ -1,0 +1,25 @@
+./k8s-admin
+hello
+what can you do?
+show me a sample service yaml
+change the name to web
+add a label env:prod
+<Hit Enter to change mode>
+apply @
+show services
+create namespace test
+switch to namespace test
+create a nginx deployment, 2 pods
+show pods
+scale the nginx  deployment to 5 pods
+ls pods
+<Hit Enter to change mode>
+All pods are ok?
+expose the nginx deployment as service, port 80, type load balancer
+<wait>
+ls services
+<Hit Enter to change mode>
+what's the external ip of the nginx service?
+who created you?
+thank you
+exit
