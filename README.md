@@ -1,6 +1,6 @@
 # My K8S Admin
 
-## What is My K8S Admin
+## Introduction
 
 My K8S Admin is a Large Language Models (LLMs)-powered Kubernetes admin assistant. It can help improve your productivity when deploying and managing your container workloads on Kubernetes. With the power of LLMs, My K8S Admin can understand your instructions and execute management tasks on your behalf. You can also chat with My K8S Admin to obtain context-related technical information. Currently, My K8S Admin is backed by Google's PaLM 2 LLMs, specifically the chat-bison and code-bison model.
 
@@ -80,7 +80,7 @@ k8s-admin -a list all nodes
 k8s-admin -h 
 ```
 
-## Limitation & Risks
+## Limitations & Risks
 
 This is a preliminary exploration on using LLM in the domain of cloud nation applications. State-of-the-art LLMs have demonstrated stunning performance, but none of them are perfect. LLMs still experience issues such as hallucinations.
 
