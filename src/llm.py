@@ -11,9 +11,9 @@ from termcolor import colored
 import json
 
 # for development only
-os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = config.gcp_service_account_key
-if os.getenv('MY_K8S_ADMIN_GCP_PROJECT') is not None:
-    gcp_project = os.getenv('MY_K8S_ADMIN_GCP_PROJECT')
+#os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = config.gcp_service_account_key
+#if os.getenv('MY_K8S_ADMIN_GCP_PROJECT') is not None:
+#    gcp_project = os.getenv('MY_K8S_ADMIN_GCP_PROJECT')
 
 class LLM:
     #init
@@ -48,6 +48,8 @@ The input MUST meet ALL following requirements. Otherwise you should issue a war
 2. The input must be an instruction.
 3. The input should not be a question or a statement.
 4. The input should be related to Kubernetes technical subjects.
+5. If the user say thank you, you reject the request, but response to it with a positive tone.
+5. If the user say hi or hello, you reject the request, but response to it with a positive tone.
 
 Your response should be in json format, following is the schema:
 valid: 1 if the input is valid, 0 if the input is invalid
@@ -198,7 +200,7 @@ You will be very honest. If you don't know or not sure, do not make things up, j
                 return ''
 
         else:
-            print(colored(output['message'], 'red'))
+            print(colored(output['message'], 'yellow'))
             return ''
             
 # helper functions
