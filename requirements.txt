@@ -29,11 +29,11 @@ python-apt==2.2.1
 python-dateutil==2.8.2
 python-debian==0.1.39
 python-debianbts==3.1.0
-reportbug==7.10.3+deb11u1
+#reportbug==7.10.3+deb11u1
 requests==2.25.1
 rsa==4.9
 Shapely==1.8.5.post1
 six==1.16.0
 termcolor==2.3.0
-unattended-upgrades==0.1
+#unattended-upgrades==0.1
 urllib3==1.26.5
